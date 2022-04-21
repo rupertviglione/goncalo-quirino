@@ -1,0 +1,20 @@
+{
+  "name": "iportfolio",
+  "version": "1.0.0",
+  "description": "gq portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupertviglione/portfolio.git"
+  },
+  "author": "ngr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupertviglione/portfolio/issues"
+  },
+  "homepage": "https://github.com/rupertviglione/portfolio#readme"
+}
