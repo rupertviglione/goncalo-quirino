@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -47,6 +47,14 @@
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Gonçalo Quirino</a></h1>
+        <form>
+
+          <select id="lang-switch">
+              <option value="en" selected>English</option>
+              <option value="pt">Português</option>
+          </select>
+      </form>
+    
         <div class="social-links mt-3 text-center">
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -57,11 +65,14 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>about</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>resume</span></a></li>
+          <li><a href="#about" class="nav-link scrollto" lang="en"><i class="bx bx-user"></i> <span>about</span></a></li>
+          <li><a href="#about" class="nav-link scrollto" lang="pt"><i class="bx bx-user"></i> <span>sobre</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>portfolio</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto" lang="en"><i class="bx bx-file-blank"></i> <span>resume</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto" lang="pt"><i class="bx bx-file-blank"></i> <span>curriculum</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>links</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>contact</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto" lang="en"><i class="bx bx-envelope"></i> <span>contact</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto" lang="pt"><i class="bx bx-envelope"></i> <span>contactos</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -71,10 +82,15 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Gonçalo Quirino</h1>
-      <p>I'm <span class="typed" data-typed-items="an artist, a pedagogue, a designer, a Yoga teacher"></span></p>
+      <p><span lang="en" class="typed" data-typed-items="Artist, Pedagogue, Designer, Yoga teacher" id="heroic"></span></p>
+      <p><span lang="pt" class="typeded" data-typed-items="Artista, Pedagogo, Designer, Professor de Yoga" id="heroi"></span></p>
     </div>
-  </section><!-- End Hero -->
+   
 
+  </section>
+  
+
+  <!-- End Hero -->
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -82,22 +98,25 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About</h2>
-          <p>My goal is for my work to have a positive impact on the world. I dream of an inclusive, free and fair world. 
+          <h2 lang="en">About</h2>
+          <h2 lang="pt">Sobre</h2>
+          <p lang="en">My goal is for my work to have a positive impact on the world. I dream of an inclusive, free and fair world. 
             I see Education as the biggest driver of social development. 
             I believe in a teaching model that provides varied experiences, explores the senses, promotes autonomy, critical thinking and encourages the construction of each being with their 
             individuality.
             As a citizen and, consequently, as a professional, I am concerned about the climate crisis and all its consequences. 
             I consider it our duty to raise awareness of this issue. Inform. To form. 
             I believe that it is in sharing knowledge and exchanging ideas that we will find creative and sustainable ways of relating to the different environments in which we operate.</p>
-        </div>
+<p lang=pt">O meu objectivo é que o meu trabalho traga um impacto positivo ao mundo. Sonho com um mundo inclusivo, livre e justo. Encaro a Educação como sendo a maior impulsionadora do desenvolvimento social. Acredito num modelo de ensino que proporciona experiências variadas, explora os sentidos, promove autonomia, sentido crítico e que incentiva a construção de cada ser com as suas individualidades. Enquanto cidadão e, consequentemente, enquanto profissional, preocupa-me a crise climática e todas as suas consequências. Vejo como nosso dever gerar consciência sobre esta matéria. Informar. Formar. Acredito que é na partilha de conhecimento e na troca de ideias que encontraremos formas criativas e sustentáveis de nos relacionarmos com os vários meios de que fazemos parte.</p>
+          </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
             <img src="assets/img/profile-img.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Ecodesigner, Pedagogue, Artist, Yoga Teacher</h3>
+            <h3 lang="en">Ecodesigner, Pedagogue, Artist, Yoga Teacher</h3>
+            <h3 lang="pt">Ecodesigner, Pedagogo, Artista, Professor de Yoga</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
@@ -105,14 +124,14 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>2 November 1985</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <a href="mailto:quirino.goncalo@gmail.com"><span>www.example.com</span></a></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lisbon, Portugal</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong lang="en">Birthday:</strong><strong lang="pt">Data de Nascimento:</strong> <span>2 November 1985</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <a href="mailto:quirino.goncalo@gmail.com"><span>quirino.goncalo@gmail.com</span></a></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong lang="en">City:</strong><strong lang="pt">Cidade:</strong>  <span lang="en">Lisbon, Portugal</span><span lang="pt">Lisboa, Portugal</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>36</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong lang="en">Age:</strong><strong lang="pt">Idade:</strong> <span>36</span></li>
                 </ul>
               </div>
             </div>
@@ -123,396 +142,17 @@
 
       </div>
     </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
+     <!-- ======= Services Section ======= -->
+     <section id="services" class="services">
       <div class="container">
 
-        <div class="section-title">
-          <h2>Facts</h2>
+        <div class="section-title" lang="en">
+          <h2 lang="en">Services</h2>
+          <h2 lang="pt">Serviços</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Gonçalo Quirino</h4>
-              <p><em>Artist, designer and pedagogue, founder of Seiva Atelier.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Interior Designer</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Seiva Atelier, Lisboa, PT </em></p>
-              <ul>
-                <li></li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Ecodesigner</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Seiva Atelier, Lisboa, PT</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Pedagogue</h4>
-              <h5>2021</h5>
-              <p><em>Movimento Bloom, Escola da Floresta (Forest School)</em></p>
-              <h5>2013 - 2020</h5>
-              <p><em>Member of CAIC (Creating and Articulating Ideas Comité) of CEBI Foundation, Alverca, Portugal</em></p>
-              <ul>
-        
-                  <li>responsible for the creation of various events at the CEBI Foundation and the respective interdisciplinary pedagogical articulation, promoting artistic education, creating intersections between the activities promoted by the CAIC and the contents covered in the various academic contexts of Colégio José Álvaro Vidal.</li>
-                <li>In this context, he writes, directs and sets the stage for the shows: 
-                  <span stlye="font-style:italic;">Os Gigantes</span>,   <span stlye="font-style:italic;">Afecto</span> and   <span stlye="font-style:italic;">Mundo da Fantasia</span>. 
-                </li>
-                <li>He also creates the interactive installation, <span stlye="font-style:italic;">wonder room</span>, integrated in the European project  <span stlye="font-style:italic;">Erasmus + - Learn To Play, Play To Learn</span>, which allows the exercise of various curricular program contents, in a non-formal and sensorial approach.</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-              <h5>2011 - 2020</h5>
-              <p><em>
-                Dramatic Expression Teacher – Preschool, 5th to 9th grade – CEBI Foundation, José Álvaro Vidal College, Alverca, Portugal</em></p>
-              <ul>
-        
-                  <li>responsible for the creation of various events at the CEBI Foundation and the respective interdisciplinary pedagogical articulation, promoting artistic education, creating intersections between the activities promoted by the CAIC and the contents covered in the various academic contexts of Colégio José Álvaro Vidal.</li>
-                <li>In this context, he writes, directs and sets the stage for the shows: 
-                  <span stlye="font-style:italic;">Os Gigantes</span>,   <span stlye="font-style:italic;">Afecto</span> and   <span stlye="font-style:italic;">Mundo da Fantasia</span>. 
-                </li>
-                <li>He also creates the interactive installation, <span stlye="font-style:italic;">wonder room</span>, integrated in the European project  <span stlye="font-style:italic;">Erasmus + - Learn To Play, Play To Learn</span>, which allows the exercise of various curricular program contents, in a non-formal and sensorial approach.</li>
-              </ul>
-              <h5>2011 - 2020</h5>
-              <p><em>
-                Dramatic Expression Teacher – Professional Course of Sociocultural Animation – Level III, and Child Support – Level III – Gustave Eiffel Professional School, Amadora, Portugal</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Theatre</h4>
-              <h5><em>Directing and Stage Design</em></h5></br>
-              <h5>2019</h5>
-              <p><em><span style="font-style:italic;">Os Anciãos</span> by Deborah Pearson, Teatro Estúdio Ildefonso Valério</em></p>
-              <h5>2018</h5>
-              <p><em><span style="font-style:italic;">Dang'An</span> by Nuno Gonçalo Rodrigues, CEBI Foundation</em></p>
-              <h5>2017</h5>
-              <p><em><span style="font-style:italic;">Atalhos</span> by Joana Craveiro, CEBI Foundation, in project PANOS – Palcos Novos, Palavras Novas (Culturgest Foundation)</em></p>
-              <h5>2016</h5>
-              <p><em><span style="font-style:italic;">Primeira Geração </span>by Nuno Gonçalo Rodrigues, Teatro da Politécnica, in S.O.S. by Os Possessos</em></p>
-              <h5>2015</h5>
-              <p><em><span style="font-style:italic;">Só há uma vida e nela quero ter tempo para construir-me e destruir-me</span> by de Pablo Fidalgo Lareo, Teatro Estúdio Ildefonso Valério, and Small Auditorium of Culturgest Foundation, in project PANOS – Palcos Novos, Palavras Novas</em></p>
-              <h5>2014</h5>
-              <p><em><span style="font-style:italic;">Os Anjos Tossem Assim</span> by Sandro William Junqueira, Teatro Estúdio Ildefonso Valério, and Big Auditorium of Culturgest Foundation, in project PANOS – Palcos Novos, Palavras Novas</em></p>
-              <h5>2013</h5>
-              <p><em><span style="font-style:italic;">Às Escuras</span> by Davey Anderson, Teatro Estúdio Ildefonso Valério, in project PANOS – Palcos Novos, Palavras Novas</em></p>
-              <h5>2012</h5>
-              <p><em><span style="font-style:italic;">Casaret</span> by Gonçalo Quirino, independent production, in various taverns, Lisbon, Portugal</em></p>
-              <h5>2011</h5>
-              <p><em><span style="font-style:italic;">Lucilina e Antenor</span> based on Matilde Rosa Araújo, Arte à Parte, Teatro Académico Gil Vicente – Coimbra, and Teatro Aveirense, Aveiro, Portugal</em></p>
-              <h5><em>Choreographer and Movement</em></h5></br>
-              <h5>2018</h5>
-              <p><em><span style="font-style:italic;">O Novo Mundo</span> by Os Possessos, Fundação Culturgest, Lisboa, Portugal</em></p>
-              <h5>2017</h5>
-              <p><em><span style="font-style:italic;">A Estupidez</span> by Rafael Spregelburd, dir. João Pedro Mamede, Artistas Unidos, Teatro da Politécnica, Lisboa, Portugal</em></p>
-              <h5>2015</h5>
-              <p><em><span style="font-style:italic;">Rapsódia Batman</span> by João Pedro Mamede, dir. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, Lisboa, Portugal</em></p>
-              <h5>2012</h5>
-              <p><em><span style="font-style:italic;">O Mistério de Belém</span> inspired by Gil Vicente and Maria Clara Machado, dir. Isabel Craveiro,  O Teatrão, Coimbra, Portugal</em></p>
-              <h5>2010</h5>
-              <p><em>Responsible for the physical preparation of the actors and choreographer of the show <span style="font-style:italic;">Harlequin Servant of Two Masters</span> by Carlo Goldoni, dir. Simoni Boer; O Teatrão, Coimbra, Portugal </em></p>
-              <h5><em>Costumes Designer</em></h5></br>
-              <h5>2018</h5>
-              <p><em><span style="font-style:italic;">Sweet Home Europa</span> by Davide Carnevali, dir. João Pedro Mamede, D. Maria II National Theatre, Lisboa, Portugal</em></p>
-              <h5>2017</h5>
-              <p><em><span style="font-style:italic;">Marcha Invencível</span> by João Pedro Mamede, dir. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, and D. Maria II National Theatre, Lisboa, Portugal</em></p>
-              <h5>2015</h5>
-              <p><em><span style="font-style:italic;">II - A mentira</span> by João Pedro Mamede, dir. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, Lisboa, Portugal</em></p>
-              <h5><em>Set Designer</em></h5></br>
-              <h5>2017</h5>
-              <p><em><span style="font-style:italic;">Marcha Invencível</span> by João Pedro Mamede, dir. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, and D. Maria II National Theatre, Lisboa, Portugal</em></p>
-              <h5>2017</h5>
-              <p><em><span style="font-style:italic;">E Agora</span> by de Kelly Varela, in community project Teatralidades of Ílhavo City Hall, in Casa da Cultura de Ílhavo, Portugal</em></p>
-              <h5>2016</h5>
-              <p><em><span style="font-style:italic;">Memórias</span> by de Kelly Varela, in community project Teatralidades of Ílhavo City Hall, in Casa da Cultura de Ílhavo, Portugal</em></p> 
-            </div>
-
-              <div class="resume-item">
-                <h4>Coordinator and monitor of summer camps</h4>
-                <h5>2010</h5>
-                <p><em>Junior Tourism Coordinator, Inatel Foundation, Lisbon, Portugal</em></p>
-                  <h5>2004/2010</h5>
-                  <p><em> Summer camp monitor at Tempo de Aventura, Portugal</em><
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">all</li>
-              <li data-filter=".filter-education">education</li>
-              <li data-filter=".filter-designer">designer</li>
-              <li data-filter=".filter-yoga">yoga</li>
-              <li data-filter=".filter-theatre">theatre</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-education">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-education">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-education">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
+        <div class="section-title" lang="pt">
+          <h2>Serviços</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -550,9 +190,505 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
 
-    <!-- ======= Testimonials Section ======= -->
+        <div lang="en" class="section-title">
+          <h2>Skills</h2>
+          <p>Ability to adapt to multicultural environments, initiative, good communication skills, assertiveness, team spirit and ease of integration in team dynamics, ability to work under pressure, responsibility and sense of organization.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Organization
+                <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Driving License <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Windows and Microsoft Office <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">Portuguese <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Castellaño <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">English <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+   <!-- ======= Portfolio Section ======= -->
+   <section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li lang="en" data-filter="*" class="filter-active">all</li>
+            <li lang="en" data-filter=".filter-education">education</li>
+            <li lang="en" data-filter=".filter-designer">designer</li>
+            <li lang="en" data-filter=".filter-yoga">yoga</li>
+            <li lang="en" data-filter=".filter-theatre">theatre</li>
+            <li lang="pt" data-filter="*" class="filter-active">todos</li>
+            <li lang="pt" data-filter=".filter-education">educação</li>
+            <li lang="pt" data-filter=".filter-designer">designer</li>
+            <li lang="pt" data-filter=".filter-yoga">yoga</li>
+            <li lang="pt" data-filter=".filter-theatre">teatro</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div lang="en" class="section-title">
+          <h2>Resume</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div lang="pt" class="section-title">
+          <h2>Curriculum</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Gonçalo Quirino</h4>
+              <p lang="en"><em>Artist, designer, pedagogue and Yoga teacher, founder of Seiva Atelier.</em></p>
+              <p lang="pt"><em>Artista, designer, pedagogo e professor de Yoga, fundador da Seiva Atelier.</em></p>
+              <ul>
+              
+                <li>+351 91 420 15 03</li>
+                <li>quirino.goncalo@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 lang="en" class="resume-title">Education</h3>
+            <h3 lang="pt" class="resume-title">Formação</h3>
+            <div lang="en" class="resume-item">
+              <h4>Yoga Teacher Course</h4>
+              <h5>February 2021 - January 2021</h5>
+              <p><em>Shift You Academy, Lisbon, Portugal</em></p>
+              <p>300 hours, certified by Yoga Alliance.</p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Curso de Professor de Yog</h4>
+              <h5>Fevereiro 2021 - Janeiro 2021</h5>
+              <p><em>Shift You Academy, Lisboa, Portugal</em></p>
+              <p>300 horas, certificado pela Yoga Alliance.</p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>Training in Emotional Intelligence</h4>
+              <h5>May 2020</h5>
+              <p><em>IEFP, Lisbon, Portugal</em></p>
+              <p>50 hours, by Dra. Sandra Fonseca.</p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>Formação em Inteligência Emocional</h4>
+              <h5>Maio 2020</h5>
+              <p><em>IEFP, Lisboa, Portugal</em></p>
+              <p>50 horas, formação ministrada pela psicóloga Dra. Sandra Fonseca.</p>
+            </div>
+            <div  lang="en" class="resume-item">
+              <h4>Introduction to Biology and Biodiversity and Permaculture</h4>
+              <h5>July 2019</h5>
+              <p><em>Bela Flor Respira, Lisbon, Portugal</em></p>
+              <p>Theoric and practical training by University of Coimbra's investigator Jael Palhas.</p>
+            </div>
+            <div  lang="pt" class="resume-item">
+              <h4>Introdução à Biologia e Biodiversidade na Permaculture</h4>
+              <h5>Julho 2019</h5>
+              <p><em>Bela Flor Respira, Lisboa, Portugal</em></p>
+              <p>Formação teórico-prática leccionada pelo investigador Jael Palhas.</p>
+            </div>
+            <div lang="en"  class="resume-item">
+              <h4>VI Teachers' exchange | ERASMUS+ Project, Learn to Play - Play to Learn</h4>
+              <h5>April 2018</h5>
+              <p><em>St. Mary's Parish Primary School, Drogheda, Ireland</em></p>
+              <p>VI Exchange of teachers from partner countries of the European project Erasmus+, under the theme Learn to play – Play to Learn, with the purpose of developing an educational escape game project.
+              </p>
+            </div>
+            <div lang="pt"  class="resume-item">
+              <h4>VI Intercâmbio de Professores | ERASMUS+ Project, Learn to Play - Play to Learn</h4>
+              <h5>Abril 2018</h5>
+              <p><em>St. Mary's Parish Primary School, Drogheda, Irlanda</em></p>
+              <p></p>VI Intercâmbio de professores dos países parceiros do projecto europeu Erasmus+, com o tema Learn to play – Play to Learn, a propósito do desenvolvimento de um escape game educativo.              </p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>English Language</h4>
+              <h5>October 2014</h5>
+              <p><em>CEBI Foundation / IEFP</em></p>
+              <p>25 hours, by Dra. Marta Alhandra.
+              </p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Língua Inglesa
+              </h4>
+              <h5>Outubro 2014</h5>
+              <p><em>Fundação CEBI / IEFP</em></p>
+              <p>25 horas, pela Dra. Marta Alhandra.
+              </p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>III Comenius Programme Meeting - Education and Culture Lifelong Learning Programme Comenius</h4>
+              <h5>May 2014</h5>
+              <p><em>Ceip Moli Den Xema, Manacar, Maiorca, Spain</em></p>
+              <p>III Comenius Programme Meeting under the theme "First Stage-Awesome Children Tales".</p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>III Encontro do Programa Comenius - Education and Culture Lifelong Learning Programme Comenius</h4>
+              <h5>Maio 2014</h5>
+              <p><em>Ceip Moli Den Xema, Manacar, Maiorca, Espanha</em></p>
+              <p>III Encontro do Programa Comenius com o tema "First Stage-Awesome Children Tales".</p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>Gradutation in Theatre and Education</h4>
+              <h5>July 2010</h5>
+              <p><em>ESEC, Coimbra, Portugal</em></p>
+              <p>Directing Workshop, Direction Methodology, Acting, Actors' Direction, Theater with Specific Populations, Community Intervention, Dance, Internship.
+                15 values.</p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Licenciatura em Teatro e Educação</h4>
+              <h5>Julho 2010</h5>
+              <p><em>ESEC, Coimbra, Portugal</em></p>
+              <p>Atelier de Encenação, Metodologias de Encenação, Interpretação, Direcção de Actores, Teatro com Populações Específicas, Intervenção Comunitária, Dança e Estágio.
+                15 valores.</p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>Curricular internship - Graduation in Theatre and Education</h4>
+              <h5>July 2010</h5>
+              <p><em>ESEC, Coimbra, Portugal / O Teatrão, Coimbra, Portugal</em></p>
+              <p>Actor in <span style="font-style:italic">Harlequin, Servant of Two Masters</span> by Carlo Goldoni, playing Pantalone, directed by Simoni Boer in O Teatrão, Coimbra, Portugal. 
+                Show production functions. 18 values.
+                </p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Estágio curricular da licenciatura em Teatro e Educação</h4>
+              <h5>Julho 2010</h5>
+              <p><em>ESEC, Coimbra, Portugal / O Teatrão, Coimbra, Portugal</em></p>
+              <p>Actor em <span style="font-style:italic">Arlequim, Servidor de dois Amos</span> de Carlo Goldoni, interpretando Pantalone, encenação de Simoni Boer, n'O Teatrão, Coimbra, Portugal. 
+                Funções de produção do espectáculo. 18 valores.
+                </p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>Professional course of Performing Arts and Circense Animation - Level 3</h4>
+              <h5>July 2006</h5>
+              <p><em>EPAOE - Chapitô, Lisbon, Portugal</em></p>
+              <p>Interpretation, Dance, Body and Movement, Circus Techniques, Acrobatics, Human Motricity, Internship. 14 values.
+                </p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Curso profissional de Artes Performativas e de Animação Circense - Nível 3</h4>
+              <h5>Julho 2006</h5>
+              <p><em>EPAOE - Chapitô, Lisboa, Portugal</em></p>
+              <p>Interpretação, Dança, Corpo e Movimento, Técnicas circenses, Acrobacia, Motricidade Humana, Estágio. 14 valores.
+                </p>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>Curricular internship - Professional course of Performing Arts and Circense Animation</h4>
+              <h5>July 2006</h5>
+              <p><em>EPAOE - Chapitô, Lisbon, Portugal / Artistas Unidos, Lisbon, Portugal</em></p>
+              <p>Directing assistent to director Jorge Silva Melo andn show production functions. 17 values.
+              
+                
+                </p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Estágio curricular do curso profissional de Artes Performativas e de Animação Circense</h4>
+              <h5>Julho 2006</h5>
+              <p><em>EPAOE - Chapitô, Lisban, Portugal / Artistas Unidos, Lisboa, Portugal</em></p>
+              <p>Assistente de Encenação de Jorge Silva Melo e funções de produção do espectáculo. 17 valores.
+              
+                
+                </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 lang="en" class="resume-title">Professional Experience</h3>
+            <h3 lang="pt" class="resume-title">Experiência Profissional</h3>
+            <div lang="en" class="resume-item">
+              <h4>Interior Designer</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Seiva Atelier, Lisboa, Portugal </em></p>
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Designer de Interiores</h4>
+              <h5>2019 - Presente</h5>
+              <p><em>Seiva Atelier, Lisboa, Portugal </em></p>
+              <ul>
+                <li></li>
+              
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Ecodesigner</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Seiva Atelier, Lisboa, Portugal</em></p>
+              <ul></ul>
+            </div>
+            <div lang="en" class="resume-item">
+              <h4>Pedagogue</h4>
+              <h5>2021</h5>
+              <p><em>Movimento Bloom, Escola da Floresta (Forest School)</em></p>
+              <h5>2013 - 2020</h5>
+              <p><em>Member of CAIC (Creating and Articulating Ideas Comité) of CEBI Foundation, Alverca, Portugal</em></p>
+              <ul>
+        
+                  <li>responsible for the creation of various events at the CEBI Foundation and the respective interdisciplinary pedagogical articulation, promoting artistic education, creating intersections between the activities promoted by the CAIC and the contents covered in the various academic contexts of Colégio José Álvaro Vidal.</li>
+                <li>In this context, he writes, directs and sets the stage for the shows: 
+                  <span stlye="font-style:italic;">Os Gigantes</span>,   <span stlye="font-style:italic;">Afecto</span> and   <span stlye="font-style:italic;">Mundo da Fantasia</span>. 
+                </li>
+                <li>He also creates the interactive installation, <span stlye="font-style:italic;">wonder room</span>, integrated in the European project  <span stlye="font-style:italic;">Erasmus + - Learn To Play, Play To Learn</span>, which allows the exercise of various curricular program contents, in a non-formal and sensorial approach.</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+              <h5>2011 - 2020</h5>
+              <p><em>
+                Dramatic Expression Teacher – Preschool, 5th to 9th grade – CEBI Foundation, José Álvaro Vidal College, Alverca, Portugal</em></p>
+              <ul>
+        
+                  <li>responsible for the creation of various events at the CEBI Foundation and the respective interdisciplinary pedagogical articulation, promoting artistic education, creating intersections between the activities promoted by the CAIC and the contents covered in the various academic contexts of Colégio José Álvaro Vidal.</li>
+                <li>In this context, he writes, directs and sets the stage for the shows: 
+                  <span stlye="font-style:italic;">Os Gigantes</span>,   <span stlye="font-style:italic;">Afecto</span> and   <span stlye="font-style:italic;">Mundo da Fantasia</span>. 
+                </li>
+                <li>He also creates the interactive installation, <span stlye="font-style:italic;">wonder room</span>, integrated in the European project  <span stlye="font-style:italic;">Erasmus + - Learn To Play, Play To Learn</span>, which allows the exercise of various curricular program contents, in a non-formal and sensorial approach.</li>
+              </ul>
+              <h5>2011 - 2020</h5>
+              <p><em>
+                Dramatic Expression Teacher – Professional Course of Sociocultural Animation – Level III, and Child Support – Level III – Gustave Eiffel Professional School, Amadora, Portugal</em></p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Pedagogo</h4>
+              <h5>2021</h5>
+              <p><em>Movimento Bloom, Escola da Floresta (Forest School)</em></p>
+              <h5>2013 - 2020</h5>
+              <p><em>Membro do CCAI (Comissão Criação e Articulação de Ideias) da Fundação CEBI, Alverca, Portugal</em></p>
+              <ul>
+        
+                  <li>responsável pela criação de vários eventos na Fundação CEBI e da respectiva articulação pedagógica interdisciplinar, promovendo a educação artística, criando intersecções entre as actividades promovidades pelo CCAI e os conteúdos abordados nos vários contextos académicos do Colégio José Álvaro Vidal</li>
+                <li>Neste contexto, escreve, dirige e cenografa os espectáculos: 
+                  <span stlye="font-style:italic;">Os Gigantes</span>,   <span stlye="font-style:italic;">Afecto</span> e   <span stlye="font-style:italic;">Mundo da Fantasia</span>. 
+                </li>
+                <li> Cria a instalação interactiva <span stlye="font-style:italic;">wonder room</span>, integrada no projecto europeu  <span stlye="font-style:italic;">Erasmus + - Learn To Play, Play To Learn</span>, que permite o exercício de conteúdos vários programas curriculares, numa abordagem não-formal e sensorial.</li>
+              </ul>
+              <h5>2011 - 2020</h5>
+              <p><em>
+                Professor de Expressão Dramática - Pré-escolar ao 9º ano - Fundação CEBI, Colégio José Álvaro Vidal, Alverca, Portugal</em></p>
+      
+              <h5>2011 - 2020</h5>
+              <p><em>
+                Professor de Expressão Dramática - Curso Profissional de Animação Sociocultural (nível III) e de Apoio à Infância (nível III) - Escola Profissional Gustave Eiffel, Amadora, Portugal</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Teatro</h4>
+              <h5><em>Encenação e Cenografia</em></h5></br>
+              <h5>2019</h5>
+              <p><em><span style="font-style:italic;">Os Anciãos</span> de Deborah Pearson, Teatro Estúdio Ildefonso Valério</em></p>
+              <h5>2018</h5>
+              <p><em><span style="font-style:italic;">Dang'An</span> de Nuno Gonçalo Rodrigues, Fundação CEBI</em></p>
+              <h5>2017</h5>
+              <p><em><span style="font-style:italic;">Atalhos</span> de Joana Craveiro, Fundação CEBI, integrado no projecto PANOS – Palcos Novos, Palavras Novas ( Fundação Culturgest)</em></p>
+              <h5>2016</h5>
+              <p><em><span style="font-style:italic;">Primeira Geração </span>de Nuno Gonçalo Rodrigues, Teatro da Politécnica, integrado no ciclo S.O.S. d'Os Possessos</em></p>
+              <h5>2015</h5>
+              <p><em><span style="font-style:italic;">Só há uma vida e nela quero ter tempo para construir-me e destruir-me</span> de Pablo Fidalgo Lareo, Teatro Estúdio Ildefonso Valério, e Pequeno Auditório da Fundação Culturgest, integrado no projecto PANOS – Palcos Novos, Palavras Novas</em></p>
+              <h5>2014</h5>
+              <p><em><span style="font-style:italic;">Os Anjos Tossem Assim</span> de Sandro William Junqueira, Teatro Estúdio Ildefonso Valério, e Grande Auditório da Fundação Culturgest, integrado no projecto PANOS – Palcos Novos, Palavras Novas</em></p>
+              <h5>2013</h5>
+              <p><em><span style="font-style:italic;">Às Escuras</span> de Davey Anderson, Teatro Estúdio Ildefonso Valério, integrado no projecto PANOS – Palcos Novos, Palavras Novas (Fundação Culturgest)</em></p>
+              <h5>2012</h5>
+              <p><em><span style="font-style:italic;">Casaret</span> de Gonçalo Quirino, produção independente, em  várious tabernas, Lisboa, Portugal</em></p>
+              <h5>2011</h5>
+              <p><em><span style="font-style:italic;">Lucilina e Antenor</span> baseado em Matilde Rosa Araújo, Arte à Parte, Teatro Académico Gil Vicente – Coimbra, e Teatro Aveirense, Aveiro, Portugal</em></p>
+              <h5><em>Coreógrafo e Apoio ao Movimento</em></h5></br>
+              <h5>2018</h5>
+              <p><em><span style="font-style:italic;">O Novo Mundo</span> d'Os Possessos, Fundação Culturgest, Lisboa, Portugal</em></p>
+              <h5>2017</h5>
+              <p><em><span style="font-style:italic;">A Estupidez</span> de Rafael Spregelburd, enc. João Pedro Mamede, Artistas Unidos, Teatro da Politécnica, Lisboa, Portugal</em></p>
+              <h5>2015</h5>
+              <p><em><span style="font-style:italic;">Rapsódia Batman</span> de João Pedro Mamede, enc. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, Lisboa, Portugal</em></p>
+              <h5>2012</h5>
+              <p><em><span style="font-style:italic;">O Mistério de Belém</span> inspirado em Gil Vicente e Maria Clara Machado, enc. Isabel Craveiro, O Teatrão, Coimbra, Portugal</em></p>
+              <h5>2010</h5>
+              <p><em>Responsável pela preparação física dos actores e coreografia do espectáculo <span style="font-style:italic;">Arlequim Servidor de Dois Amos</span> de Carlo Goldoni, enc. Simoni Boer; O Teatrão, Coimbra, Portugal </em></p>
+              <h5><em>Figurinista</em></h5></br>
+              <h5>2018</h5>
+              <p><em><span style="font-style:italic;">Sweet Home Europa</span> de Davide Carnevali, enc. João Pedro Mamede, Teatro Nacional D. Maria II, Lisboa, Portugal</em></p>
+              <h5>2017</h5>
+              <p><em><span style="font-style:italic;">Marcha Invencível</span> de João Pedro Mamede, enc. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, e Teatro Nacional D. Maria II, Lisboa, Portugal</em></p>
+              <h5>2015</h5>
+              <p><em><span style="font-style:italic;">II - A mentira</span> de João Pedro Mamede, enc. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, Lisboa, Portugal</em></p>
+              <h5><em>Set Designer</em></h5></br>
+              <h5>2017</h5>
+              <p><em><span style="font-style:italic;">Marcha Invencível</span> de João Pedro Mamede, enc. João Pedro Mamede, Os Possessos / Artistas Unidos, Teatro da Politécnica, Lisboa, Teatro Municipal de Almada, e O Teatrão, Coimbra, Portugal.</em></p>
+              <h5>2017</h5>
+              <p><em><span style="font-style:italic;">E Agora</span> de Kelly Varela, integrado no projecto comunitário Teatralidades da Câmara Municipal de Ílhavo, Casa da Cultura de Ílhavo, Portugal</em></p>
+              <h5>2016</h5>
+              <p><em><span style="font-style:italic;">Memórias</span> de Kelly Varela, integrado no projecto comunitário Teatralidades da Câmara Municipal de Ílhavo, Casa da Cultura de Ílhavo, Portugal</em></p> 
+            </div>
+
+              <div lang="en" class="resume-item">
+                <h4>Coordinator and monitor of summer camps</h4>
+                <h5>2010</h5>
+                <p><em>Junior Tourism Coordinator, Inatel Foundation, Lisbon, Portugal</em></p>
+                  <h5>2004/2010</h5>
+                  <p><em> Summer camp monitor at Tempo de Aventura, Portugal</em></p>
+            </div>
+            <div lang="pt" class="resume-item">
+              <h4>Coordenador e Monitor de campos de férias</h4>
+              <h5>2010</h5>
+              <p><em>Coordenador Turimos Júnior, Fundação Inatel, Lisboa, Portugal</em></p>
+                <h5>2004/2010</h5>
+                <p><em> Monitor de campos de férias em Tempo de Aventura, Portugal</em></p>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- </section>
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
@@ -575,7 +711,7 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
@@ -588,7 +724,7 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
@@ -601,7 +737,7 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
@@ -614,7 +750,7 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
@@ -627,52 +763,28 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title">
+        <div lang="en" class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div lang="pt" class="section-title">
+          <h2>Contactos</h2>
         </div>
 
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <div lang="en" class="row" data-aos="fade-in">
+          <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch" id="formcontact">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
@@ -702,6 +814,37 @@
           </div>
 
         </div>
+        <div lang="pt" class="row" data-aos="fade-in">
+          <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch" id="formcontact">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">E-mail</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Assunto</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Messagem</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">A carregar</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Mensagem enviada. Obrigado!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
+            </form>
+          </div>
+
+        </div>
 
       </div>
     </section><!-- End Contact Section -->
@@ -727,7 +870,9 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+
   <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -739,6 +884,32 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>  
+$('[lang="pt"]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just PT text (you can change it)
+$('#lang-switch').change(function () { // put onchange event when user select option from select  
+  var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    switch (lang) {
+        case 'en':
+            $('[lang="pt"]').hide();
+            $('[lang="en"]').show();
+$("#hero > div > p:nth-child(3) > span.typed-cursor").hide();
+
+           
+              break;
+        case 'pt':
+            $('[lang="en"]').hide();
+            $('[lang="pt"]').show();
+          $("#hero > div > p:nth-child(2) > span.typed-cursor").hide();
+            break;
+        default:
+            $('[lang="pt"]').hide();
+            $('[lang="en"]').show();
+           
+          };
+});
+</script>
 
 </body>
 

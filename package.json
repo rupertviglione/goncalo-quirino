@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/rupertviglione/portfolio/issues"
   },
-  "homepage": "https://github.com/rupertviglione/portfolio#readme"
+  "homepage": "https://github.com/rupertviglione/portfolio#readme",
+  "dependencies": {
+    "i18next": "^21.6.16",
+    "jquery": "^3.6.0"
+  }
 }
