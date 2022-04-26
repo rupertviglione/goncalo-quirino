@@ -47,17 +47,23 @@
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Gonçalo Quirino</a></h1>
-        <form>
+        <div class="social-links mt-3 text-center custom-select" style="display:none">
 
           <select id="lang-switch">
-              <option value="en" selected>English</option>
-              <option value="pt">Português</option>
+              <option class="facebook" value="en" selected>EN</option>
+              <option class="instagram" value="pt">PT</option>
           </select>
-      </form>
+        </div>
+        <div class="social-links mt-3 text-center custom-select">
+
+       
+              <button type="button" onClick="myFunction()" class="facebook buttons" value="en">EN</button>
+              <button type="button" onClick="myFunction2()" class="instagram buttons" value="pt">PT</option>
+        </div>
     
         <div class="social-links mt-3 text-center">
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.facebook.com/goncalo.quirino.94" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/quirino.goncalo/" class="instagram"><i class="bx bxl-instagram"></i></a>
   
         </div>
       </div>
@@ -67,10 +73,12 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>home</span></a></li>
           <li><a href="#about" class="nav-link scrollto" lang="en"><i class="bx bx-user"></i> <span>about</span></a></li>
           <li><a href="#about" class="nav-link scrollto" lang="pt"><i class="bx bx-user"></i> <span>sobre</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>portfolio</span></a></li>
+                    <li><a href="#services" class="nav-link scrollto" lang="en"><i class="bx bx-server"></i> <span>services</span></a></li>            
+                            <li><a href="#services" class="nav-link scrollto" lang="pt"><i class="bx bx-server"></i> <span>serviços</span></a></li>
+
+<li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>portfolio</span></a></li>
           <li><a href="#resume" class="nav-link scrollto" lang="en"><i class="bx bx-file-blank"></i> <span>resume</span></a></li>
           <li><a href="#resume" class="nav-link scrollto" lang="pt"><i class="bx bx-file-blank"></i> <span>curriculum</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>links</span></a></li>
           <li><a href="#contact" class="nav-link scrollto" lang="en"><i class="bx bx-envelope"></i> <span>contact</span></a></li>
           <li><a href="#contact" class="nav-link scrollto" lang="pt"><i class="bx bx-envelope"></i> <span>contactos</span></a></li>
         </ul>
@@ -82,8 +90,8 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Gonçalo Quirino</h1>
-      <p><span lang="en" class="typed" data-typed-items="Artist, Pedagogue, Designer, Yoga teacher" id="heroic"></span></p>
-      <p><span lang="pt" class="typeded" data-typed-items="Artista, Pedagogo, Designer, Professor de Yoga" id="heroi"></span></p>
+      <p lang="en"><span lang="en" class="typed" data-typed-items="Artist, Pedagogue, Designer, Yoga teacher" id="heroic"></span></p>
+      <p lang="pt"><span lang="pt" class="typeded" data-typed-items="Artista, Pedagogo, Designer, Professor de Yoga" id="heroi"></span></p>
     </div>
    
 
@@ -107,7 +115,7 @@
             As a citizen and, consequently, as a professional, I am concerned about the climate crisis and all its consequences. 
             I consider it our duty to raise awareness of this issue. Inform. To form. 
             I believe that it is in sharing knowledge and exchanging ideas that we will find creative and sustainable ways of relating to the different environments in which we operate.</p>
-<p lang=pt">O meu objectivo é que o meu trabalho traga um impacto positivo ao mundo. Sonho com um mundo inclusivo, livre e justo. Encaro a Educação como sendo a maior impulsionadora do desenvolvimento social. Acredito num modelo de ensino que proporciona experiências variadas, explora os sentidos, promove autonomia, sentido crítico e que incentiva a construção de cada ser com as suas individualidades. Enquanto cidadão e, consequentemente, enquanto profissional, preocupa-me a crise climática e todas as suas consequências. Vejo como nosso dever gerar consciência sobre esta matéria. Informar. Formar. Acredito que é na partilha de conhecimento e na troca de ideias que encontraremos formas criativas e sustentáveis de nos relacionarmos com os vários meios de que fazemos parte.</p>
+<p lang="pt">O meu objectivo é que o meu trabalho traga um impacto positivo ao mundo. Sonho com um mundo inclusivo, livre e justo. Encaro a Educação como sendo a maior impulsionadora do desenvolvimento social. Acredito num modelo de ensino que proporciona experiências variadas, explora os sentidos, promove autonomia, sentido crítico e que incentiva a construção de cada ser com as suas individualidades. Enquanto cidadão e, consequentemente, enquanto profissional, preocupa-me a crise climática e todas as suas consequências. Vejo como nosso dever gerar consciência sobre esta matéria. Informar. Formar. Acredito que é na partilha de conhecimento e na troca de ideias que encontraremos formas criativas e sustentáveis de nos relacionarmos com os vários meios de que fazemos parte.</p>
           </div>
 
         <div class="row">
@@ -143,7 +151,7 @@
       </div>
     </section><!-- End About Section -->
      <!-- ======= Services Section ======= -->
-     <section id="services" class="services">
+     <section id="services" class="services section-bg">
       <div class="container">
 
         <div class="section-title" lang="en">
@@ -190,70 +198,10 @@
         </div>
 
       </div>
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
+    </section>
 
-        <div lang="en" class="section-title">
-          <h2>Skills</h2>
-          <p>Ability to adapt to multicultural environments, initiative, good communication skills, assertiveness, team spirit and ease of integration in team dynamics, ability to work under pressure, responsibility and sense of organization.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Organization
-                <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Driving License <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Windows and Microsoft Office <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">Portuguese <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Castellaño <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">English <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
    <!-- ======= Portfolio Section ======= -->
-   <section id="portfolio" class="portfolio section-bg">
+   <section id="portfolio" class="portfolio ">
     <div class="container">
 
       <div class="section-title">
@@ -280,7 +228,7 @@
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -290,7 +238,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -300,7 +248,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -320,7 +268,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -330,7 +278,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -340,7 +288,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -350,7 +298,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-designer">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -360,7 +308,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-yoga">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
@@ -369,11 +317,241 @@
             </div>
           </div>
         </div>
+        
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-13.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-13.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-14.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-14.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-15.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-15.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-16.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-16.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-17.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-17.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-18.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-18.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-19.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-19.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-20.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-20.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-theatre">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-21.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-21.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-22.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-22.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-23.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-23.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-24.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-24.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-25.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-25.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-26.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-26.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-27.jpg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-27.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
   </section><!-- End Portfolio Section -->
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+  
+          <div lang="en" class="section-title">
+            <h2>Skills</h2>
+            <p>Ability to adapt to multicultural environments, initiative, good communication skills, assertiveness, team spirit and ease of integration in team dynamics, ability to work under pressure, responsibility and sense of organization.</p>
+          </div>
+          <div lang="pt" class="section-title">
+            <h2>Capacidades</h2>
+            <p>Ability to adapt to multicultural environments, initiative, good communication skills, assertiveness, team spirit and ease of integration in team dynamics, ability to work under pressure, responsibility and sense of organization.</p>
+          </div>
+  
+          <div class="row skills-content">
+  
+            <div class="col-lg-6" data-aos="fade-up">
+  
+              <div class="progress">
+                <span class="skill">Organization
+                  <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+              <div class="progress">
+                <span class="skill">Driving License <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+              <div class="progress">
+                <span class="skill">Windows and Microsoft Office <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="progress">
+                <span class="skill">Portuguese <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Castellaño <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+              <div class="progress">
+                <span class="skill">English <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Skills Section -->
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
@@ -389,7 +567,9 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 lang="en" class="resume-title">Sumary</h3>
+            <h3 lang="pt" class="resume-title">Resumo</h3>
+
             <div class="resume-item pb-0">
               <h4>Gonçalo Quirino</h4>
               <p lang="en"><em>Artist, designer, pedagogue and Yoga teacher, founder of Seiva Atelier.</em></p>
@@ -895,6 +1075,7 @@ $('#lang-switch').change(function () { // put onchange event when user select op
             $('[lang="pt"]').hide();
             $('[lang="en"]').show();
 $("#hero > div > p:nth-child(3) > span.typed-cursor").hide();
+$("#hero > div > p:nth-child(3)").hide();
 
            
               break;
@@ -906,11 +1087,26 @@ $("#hero > div > p:nth-child(3) > span.typed-cursor").hide();
         default:
             $('[lang="pt"]').hide();
             $('[lang="en"]').show();
-           
+            $("#hero > div > p:nth-child(3) > span.typed-cursor").hide();
+            $("#hero > div > p:nth-child(3)").hide();
+
           };
 });
 </script>
+<script>
+ function myFunction() {
+  $('[lang="pt"]').hide();
+  $('[lang="en"]').show();
+}
 
+</script>
+<script>
+  function myFunction2() {
+   $('[lang="en"]').hide();
+   $('[lang="pt"]').show();
+ }
+ 
+ </script>
 </body>
 
 </html>
