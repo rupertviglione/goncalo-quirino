@@ -1,3 +1,10 @@
+.portfolio-links .filter-title {
+  top: -300%;
+  display:none;
+}
+.portfolio-wrap:hover .portfolio-links .filter-title {
+  display: block;
+}
 #redesenhar3 {
   max-height: 600px;
 object-fit:scale-down;
@@ -568,7 +575,7 @@ section {
   opacity: 1;
   left: 0;
   right: 0;
-  bottom: -60px;
+  bottom: -300px;
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
@@ -577,14 +584,18 @@ section {
 }
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
-  font-size: 28px;
+  font-size: 50px;
   text-align: center;
-  background:  rgba(236, 233, 218, 0.95);
+  
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
+}
+.portfolio-links {
+  height:100%;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(205, 201, 182, 0.95);
+color:#aebca7;
+
 }
 .portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #d6e6cf;
@@ -598,7 +609,7 @@ section {
 }
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
-  bottom: 0;
+  bottom: -25%;
 }
 
 /*--------------------------------------------------------------
