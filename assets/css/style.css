@@ -1,4 +1,35 @@
-.hidden {
+#redesenhar3 {
+  max-height: 600px;
+object-fit:scale-down;
+}
+.image-button {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-title {
+  position: absolute;
+  font-size:40px;
+  color: #fff;
+}
+
+.filter {
+position:relative;
+}
+  #portfolio-flters {
+  flex-wrap: nowrap;
+  display:inline-flex;
+}
+
+
+#portfolio-flters img {
+  width:100%;
+}
+.image-button {
+
+}.hidden {
 
  display:none;
 }
@@ -455,7 +486,7 @@ section {
 }
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #fffff5;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -510,7 +541,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #aebca7;
+  color: #aebca7!important;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
