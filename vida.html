@@ -61,11 +61,7 @@
               <button type="button" onClick="myFunction2()" class="instagram buttons" value="pt">PT</option>
         </div>
     
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/goncalo.quirino.94" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/quirino.goncalo/" class="instagram"><i class="bx bxl-instagram"></i></a>
-  
-        </div>
+    
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -155,31 +151,33 @@
             <div lang="en" class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Interior Ecodesign</li>
-                <li><strong>Client</strong>: Seiva Atelier</li>
-                <li><strong>Project date</strong>: 2021</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Theatre, Education</li>
+                <li><strong>Where</strong>: Colégio José Álvaro Vidal, Alverca; Culturgest, Lisbon</li>
+                <li><strong>Project date</strong>: 2015</li>
               </ul>
             </div>
             <div lang="pt" class="portfolio-info">
               <h3>Informação do Projecto</h3>
               <ul>
-                <li><strong>Categoria</strong>: Ecodesign de Interiores</li>
-                <li><strong>Cliente</strong>: Seiva Atelier</li>
-                <li><strong>Data do projecto</strong>: 2021</li>
-                <li><strong>Link para o projecto</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Categoria</strong>: Teatro, Educação</li>
+                <li><strong>Onde</strong>: Colégio José Álvaro Vidal, Alverca; Culturgest, Lisboa</li>
+                <li><strong>Data do projecto</strong>: 2015</li>
               </ul>
             </div>
             <div lang="en" class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <h2>Professor, director and set and costumes designer for
+                              <span font-style="italic">There is only one life and in it I want to have time to build and destroy myself</span>, by Pablo Fidalgo Lareo. Integrated in the PANOS Festival - New Stages, New Words.</h2>
+                             <p>
+                <span font-style="italic">There is only one life and in it I want to have time to build myself and destroy myself</span> is a kind of intimate assembly, a landscape that anyone can recognize. 
+                Words that invite you to be calm, to whisper, to speak looking into the eyes, to dance softly. 
+                Words that question education, the present. Words that can purify bodies and restore them to their purity and original sin. 
+                An instruction manual to be credible and to change the system from within.              </p>
             </div>
             <div lang="pt" class="portfolio-description">
-              <h2>Este é um exemplo de detalhe do portefólio</h2>
+              <h2>Professor orientador, encenador e criador plástico de
+               <span font-style="italic">Só há uma vida e nela quero ter tempo para construir-me e destruir-me</span>, de Pablo Fidalgo Lareo. Integrado no Festival PANOS - Palcos Novos, Palavras novas.</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Só há uma vida e nela quero ter tempo para construir-me e destruir-me é uma espécie de assembleia íntima, uma paisagem que qualquer um pode reconhecer. Palavras que convidam a estar calmo, a sussurrar, a falar olhando nos olhos, a dançar suavemente. Palavras que questionam a educação, o presente. Palavras que podem purificar os corpos e devolver-lhes a sua pureza e o seu pecado original. Um manual de instruções para ser credível e para mudar o sistema a partir de dentro.
               </p>
             </div>
           </div>
@@ -226,8 +224,8 @@
   <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>  
-$('[lang="pt"]').hide(); // hide all lang attributes on start.
-$('[lang="en"]').show(); // show just PT text (you can change it)
+$('[lang="en"]').hide(); // hide all lang attributes on start.
+$('[lang="pt"]').show(); // show just PT text (you can change it)
 $('#lang-switch').change(function () { // put onchange event when user select option from select  
   var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
     switch (lang) {

@@ -61,11 +61,7 @@
               <button type="button" onClick="myFunction2()" class="instagram buttons" value="pt">PT</option>
         </div>
     
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/goncalo.quirino.94" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/quirino.goncalo/" class="instagram"><i class="bx bxl-instagram"></i></a>
   
-        </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -155,32 +151,47 @@
             <div lang="en" class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Interior Ecodesign</li>
-                <li><strong>Client</strong>: Seiva Atelier</li>
-                <li><strong>Project date</strong>: 2021</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Education</li>
+                <li><strong>Client</strong>: Fundação CEBI - Colégio José Álvaro Vidal</li>
+                <li><strong>Project date</strong>: </li>
               </ul>
             </div>
             <div lang="pt" class="portfolio-info">
               <h3>Informação do Projecto</h3>
               <ul>
-                <li><strong>Categoria</strong>: Ecodesign de Interiores</li>
-                <li><strong>Cliente</strong>: Seiva Atelier</li>
-                <li><strong>Data do projecto</strong>: 2021</li>
-                <li><strong>Link para o projecto</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Categoria</strong>: Educação</li>
+                <li><strong>Cliente</strong>: Fundação CEBI - Colégio José Álvaro Vidal</li>
+                <li><strong>Data do projecto</strong>: </li>
               </ul>
             </div>
             <div lang="en" class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Creator of the escape game "Wonder room"
+                Project integrated and funded by the european programme "Erasmus+ - Play to Learn, Learn to Play"
+              </h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+                Based on a narrative that mixes the works "Alice on the other side of the mirror", by Lewis Carroll and "The doors of perception", by Aldous Huxley, created and coordinated the construction and assembly of the game's set, composed of 4 different rooms
+                equipped with games and secret passages, using electromagnetic locks, operated in the most varied ways.
+                The space proposes a journey into this surrealist universe. As in a dream, a state of our consciousness is emulated in which anything can happen and where the laws of physics do not operate.
+                
+                To overcome the challenge of escaping that house in a given time, teams must find objects, solve puzzles, decipher coded messages and match a series of clues.
+                All challenges are adapted to the contents of the curricular plan for each year, from the 1st to the Secondary Cycle. So, while students challenge their skills by playing as a team, they are also solving problems and interpreting riddles
+                by applying the knowledge acquired in the context of the various subjects - combining formal learning with the act of playing and in relation to others.              </p>
             </div>
             <div lang="pt" class="portfolio-description">
-              <h2>Este é um exemplo de detalhe do portefólio</h2>
+              <h2>Criador do Escape Game "Wonder Room"
+
+                Projecto inserido e financiado pelo programa europeu "Erasmus+ - Play to Learn, Learn to Play" 
+                </h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+                A partir da criação de uma narrativa que mistura as obras "Alice do outro lado do espelho", de Lewis Carroll e "As portas da percepção", de Aldous Huxley, criou e coordenou a obra e montagem do cenário do jogo, composto por 4 salas distintas 
+                dotadas de jogos e passagens secretas, com recurso a fechaduras electromagénitcas, accionadas das mais variadas formas.
+                O espaço propõe uma viagem a este universo surrealista. Como num sonho, emulam-se um estado do nosso consciente em que tudo pode acontecer e onde as leis da física não operam.
+                
+                Para superarem o desafio de escapar dessa casa num tempo determinado, as equipas têm de encontrar objetos, resolver enigmas, decifrar mensagens codificadas e combinar uma série de pistas. 
+                Todos os desafios são adaptados aos conteúdos programáticos previstos no plano curricular de cada ano, do 1º Ciclo ao Secundário. Assim, enquanto os alunos desafiam as suas capacidades brincando em equipa, resolvem problemas e interpretam enigmas 
+                por forma a aplicarem os conhecimentos adquiridos no contexto das várias disciplinas- aliar a aprendizagem formal ao acto de brincar e ao relacionamento com os outros.
+                
+                              </p>
             </div>
           </div>
 
@@ -226,8 +237,8 @@
   <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>  
-$('[lang="pt"]').hide(); // hide all lang attributes on start.
-$('[lang="en"]').show(); // show just PT text (you can change it)
+$('[lang="en"]').hide(); // hide all lang attributes on start.
+$('[lang="pt"]').show(); // show just PT text (you can change it)
 $('#lang-switch').change(function () { // put onchange event when user select option from select  
   var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
     switch (lang) {

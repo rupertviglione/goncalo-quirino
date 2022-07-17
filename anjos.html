@@ -61,11 +61,7 @@
               <button type="button" onClick="myFunction2()" class="instagram buttons" value="pt">PT</option>
         </div>
     
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/goncalo.quirino.94" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/quirino.goncalo/" class="instagram"><i class="bx bxl-instagram"></i></a>
-  
-        </div>
+     
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -158,31 +154,34 @@
             <div lang="en" class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Interior Ecodesign</li>
-                <li><strong>Client</strong>: Seiva Atelier</li>
-                <li><strong>Project date</strong>: 2021</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Theatre, Education</li>
+                <li><strong>Where</strong>: Teatro Estúdio Ildefonso Valério, Alverca; Culturgest, Lisboa</li>
+                <li><strong>Project date</strong>: 2014</li>
               </ul>
             </div>
             <div lang="pt" class="portfolio-info">
               <h3>Informação do Projecto</h3>
               <ul>
-                <li><strong>Categoria</strong>: Ecodesign de Interiores</li>
-                <li><strong>Cliente</strong>: Seiva Atelier</li>
-                <li><strong>Data do projecto</strong>: 2021</li>
-                <li><strong>Link para o projecto</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Categoria</strong>: Teatro, Educação</li>
+                <li><strong>Onde</strong>: Teatro Estúdio Ildefonso Valério, Alverca; Culturgest, Lisboa</li>
+                <li><strong>Data do projecto</strong>: 2014</li>
               </ul>
             </div>
             <div lang="en" class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Teacher, director, and set and costumes designer for
+                <span font-style="italic">Angels Cough Like Lhis</span> by Sandro William Junqueira. Integrated in PANOS Festival - Palcos novos, palavras novas.
+                </h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+                <span font-style="italic">Angels Cough Like This</span> takes place in a country where a coup d'état has taken place. A group of teenagers meet daily on the terrace of a building. 
+                There are soldiers on the streets, barricaded areas, food rationing, curfews, manhunt. How to live these days of siege? Because it's about survival we're talking: is it the instinct that saves them? Or is it still possible for someone to do something?              </p>
             </div>
             <div lang="pt" class="portfolio-description">
-              <h2>Este é um exemplo de detalhe do portefólio</h2>
+              <h2>Professor orientador, encenador e criador plástico de 
+                <span font-style="italic">Os Anjos Tossem Assim</span>, de Sandro William Junqueira. Integrado no Festival PANOS - Palcos novos, palavras novas.
+                </h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                <span font-style="italic">Os Anjos Tossem Assim</span> tem lugar num país onde ocorreu um golpe de estado. Um grupo de adolescentes encontra-se diariamente no terraço de um prédio. 
+                Há militares nas ruas, zonas barricadas, racionamento alimentar, recolher obrigatório, caça ao homem. Como viver estes dias de cerco? Porque é de sobrevivência que se trata: será o instinto que os salva? Ou é possível, ainda, alguém fazer alguma coisa?
               </p>
             </div>
           </div>
@@ -229,8 +228,8 @@
   <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>  
-$('[lang="pt"]').hide(); // hide all lang attributes on start.
-$('[lang="en"]').show(); // show just PT text (you can change it)
+$('[lang="en"]').hide(); // hide all lang attributes on start.
+$('[lang="pt"]').show(); // show just PT text (you can change it)
 $('#lang-switch').change(function () { // put onchange event when user select option from select  
   var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
     switch (lang) {

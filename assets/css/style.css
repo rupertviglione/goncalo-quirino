@@ -1,3 +1,10 @@
+.hidden {
+
+ display:none;
+}
+.showing {
+  display: block;
+}
 .buttons {
 
   font-size: 18px;
@@ -588,6 +595,9 @@ section {
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
+  padding-top: 10px;
+  max-height: 23%;
+  line-height: 15px;
   box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
 }
 .portfolio-details .portfolio-info h3 {
@@ -609,7 +619,7 @@ section {
   padding-top: 30px;
 }
 .portfolio-details .portfolio-description h2 {
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 700;
   margin-bottom: 20px;
 }
