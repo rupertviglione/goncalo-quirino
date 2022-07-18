@@ -1,3 +1,8 @@
+.resume-item h4 {
+  background: rgba(174, 188, 167, 0.7);
+  width:fit-content;
+  padding:0.8%;
+}
 .portfolio-links .filter-title {
   top: -300%;
   display:none;
@@ -26,7 +31,7 @@ object-fit:scale-down;
 position:relative;
 }
   #portfolio-flters {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   display:inline-flex;
 }
 
@@ -987,6 +992,15 @@ color:#aebca7;
   content: "/";
 }
 @media (max-width: 768px) {
+  .filter, .filter-active {
+    width:48%;
+    padding:0!important;
+    margin: 1%!important;
+  }
+  .filter-title {
+    font-size:22px;
+  }
+
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -997,6 +1011,16 @@ color:#aebca7;
     display: inline-block;
   }
 }
+@media (min-width: 768px) {
+  .filter, .filter-active {
+    width:23%;
+    padding:0!important;
+    margin: 1%!important;
+  }
+  .filter-title {
+    font-size:30px;
+  }
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -1026,5 +1050,8 @@ color:#aebca7;
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+  .filter-title {
+    font-size:35px;
   }
 }
