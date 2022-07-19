@@ -1,4 +1,4 @@
-.resume-item h4 {
+.resume-item .resume-green {
   background: rgba(174, 188, 167, 0.7);
   width:fit-content;
   padding:0.8%;
@@ -41,7 +41,8 @@ position:relative;
 }
 .image-button {
 
-}.hidden {
+}
+.hidden {
 
  display:none;
 }
