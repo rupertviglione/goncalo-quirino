@@ -1072,3 +1072,9 @@ color:#aebca7;
     font-size: 30px;
   }
 }
+
+.resume .resume-item h5 + h5 {
+  display: block;
+  margin-top: -5px; /* Ajusta a proximidade com a data */
+  padding-left: 0; /* Alinha o texto à esquerda */
+}
