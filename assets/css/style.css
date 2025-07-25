@@ -30,10 +30,7 @@ object-fit:scale-down;
 .filter {
 position:relative;
 }
-  #portfolio-flters {
-  flex-wrap: wrap;
-  display:inline-flex;
-}
+
 
 
 #portfolio-flters img {
@@ -185,15 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 300px;
 }
 
-@media (max-width: 1199px) {
-  #header {
-    left: -300px;
-  }
 
-  #main {
-    margin-left: 0;
-  }
-}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -992,35 +981,7 @@ color:#aebca7;
   color: #0e2442;
   content: "/";
 }
-@media (max-width: 768px) {
-  .filter, .filter-active {
-    width:48%;
-    padding:0!important;
-    margin: 1%!important;
-  }
-  .filter-title {
-    font-size:22px;
-  }
 
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-@media (min-width: 768px) {
-  .filter, .filter-active {
-    width:23%;
-    padding:0!important;
-    margin: 1%!important;
-  }
-  .filter-title {
-    font-size:30px;
-  }
 
 
 /*--------------------------------------------------------------
@@ -1054,5 +1015,51 @@ color:#aebca7;
   }
   .filter-title {
     font-size:35px;
+  }
+}
+
+/* Define o contentor dos filtros como flexbox para alinhar os itens */
+.portfolio #portfolio-flters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra os botões no contentor */
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+/* Estilo de cada item do filtro */
+.portfolio #portfolio-flters li {
+  margin: 5px; /* Adiciona um pequeno espaçamento entre os botões */
+}
+
+/* Faz com que a imagem dentro do botão do filtro não ultrapasse o seu contentor */
+.portfolio #portfolio-flters li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Em ecrãs pequenos (mobile), cada filtro ocupa quase metade da largura (2 por linha) */
+@media (max-width: 768px) {
+  .portfolio #portfolio-flters li.filter, 
+  .portfolio #portfolio-flters li.filter-active {
+    flex: 1 1 45%; /* Permite que os botões cresçam e encolham, com uma base de 45% */
+    max-width: 45%;
+  }
+
+  .filter-title {
+    font-size: 20px; /* Ajuste opcional do tamanho da fonte */
+  }
+}
+
+/* Em ecrãs maiores, cada filtro ocupa cerca de um quarto da largura (4 por linha) */
+@media (min-width: 769px) {
+  .portfolio #portfolio-flters li.filter, 
+  .portfolio #portfolio-flters li.filter-active {
+    flex: 1 1 22%; /* Base de 22% para criar 4 colunas */
+    max-width: 22%;
+  }
+
+  .filter-title {
+    font-size: 30px;
   }
 }
