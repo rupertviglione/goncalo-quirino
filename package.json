@@ -4,7 +4,6 @@
   "description": "gq portfolio",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server"
   },
   "repository": {
@@ -20,5 +19,9 @@
   "dependencies": {
     "i18next": "^21.6.16",
     "jquery": "^3.6.0"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
